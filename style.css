@@ -1,0 +1,372 @@
+
+/* =====================================
+   1. PENGATURAN DASAR
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #263445;
+    background-color: #f1f5f9;
+}
+
+
+/* =====================================
+   2. HEADER PROFIL
+===================================== */
+
+header {
+    background: linear-gradient(135deg, #092f67, #1266a8);
+    color: white;
+    padding: 45px 20px;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+/* INFORMASI PROFIL */
+
+.header-info {
+    text-align: left;
+    min-width: 0;
+}
+
+.header-info h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.header-info p {
+    color: white;
+    font-size: 17px;
+    margin: 6px 0;
+}
+
+
+/* FOTO PROFIL */
+
+.foto-profil {
+    display: block;
+    width: 170px;
+    height: 170px;
+    min-width: 170px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #ffd23f;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+/* =====================================
+   3. NAVIGASI
+===================================== */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: white;
+    padding: 16px 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.navigation a {
+    color: #092f67;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #092f67;
+    color: white;
+}
+
+/* ===================================
+    Footer lebih menarik
+=================================== */
+.footer {
+    background: linear-gradient(
+        135deg,
+        #092f67,
+        #1266a8
+    );
+    color:white;
+    padding: 25px;       
+
+}
+
+/* Tampilan lebih halus */
+::selection {
+    background-color: #ffd23f;
+    color: #092f67;
+}
+
+
+/* =====================================
+   4. KONTEN UTAMA
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 0 10px;
+}
+
+
+/* =====================================
+   5. KARTU PROFIL
+===================================== */
+
+.card {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid #e0e7ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #092f67;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffd23f;
+}
+
+.card h3 {
+    color: #1266a8;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #435365;
+    margin: 8px 0;
+}
+
+
+/* =====================================
+   6. PENDIDIKAN DAN PENGALAMAN
+===================================== */
+
+.item {
+    margin-bottom: 22px;
+    padding-left: 18px;
+    border-left: 4px solid #1266a8;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   7. KEAHLIAN
+===================================== */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    background-color: #e5f1fc;
+    color: #092f67;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   8. TAUTAN KONTAK
+===================================== */
+
+.card a {
+    color: #0967b2;
+    text-decoration: none;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.card a:hover {
+    color: #092f67;
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   9. FOOTER
+===================================== */
+
+.footer {
+    background-color: #092f67;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   10. TAMPILAN HP
+===================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .header-info {
+        text-align: center;
+    }
+
+    .header-info h1 {
+        font-size: 27px;
+        white-space: normal;
+    }
+
+    .header-info p {
+        font-size: 15px;
+    }
+
+    .foto-profil {
+        width: 145px;
+        height: 145px;
+        min-width: 145px;
+    }
+
+    .navigation {
+        gap: 5px;
+        padding: 12px 8px;
+    }
+
+    .navigation a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .container {
+        width: 96%;
+        margin: 20px auto;
+        padding: 0 5px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+}
+
+/* ==========================
+    Darj Mode
+========================== */
+#darkModeBtn {
+    background-color: #092f67;
+    color: white;
+    border: 2px solid #ffd23f;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+    background-color: #1266a8;
+}
+
+/* Tampilan ketika Dark aktif */
+body.dark-mode {
+    background-color: #172033;
+    color: #e2e8f0;
+}
+
+body.dark-mode.navigation {
+    background-color: #263449;
+}
+
+body.dark-mode.navigation a {
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #263449;
+    border-color: #475569;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card h3 {
+    color: #93c5fd;
+}
+
+body.dark-mode .card p {
+    color: #e2e8f0;
+}
+
+body.dark-mode .item {
+    background-color: #334155;
+    border-left-color: #60a5fa;
+}
+
+body.dark-mode .skill-list li{
+    background-color: #334155;
+    color: #bfdbfe;
+    border-color: #475569
+}
+
+body.mark-mode .card a {
+    color: #93c5fd;
+}
